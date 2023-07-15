@@ -66,8 +66,8 @@ Explain the recommended best practices for writing HTML code, including:
 
 ```html
 <!-- Example HTML code snippet -->
-<figure>
-  <img src="image.jpg" alt="Description">
+<figure class="logo__wrapper">
+  <img class="logo" src="image.jpg" alt="Description">
   <figcaption>Caption</figcaption>
 </figure>
 ```
@@ -87,7 +87,14 @@ Explain the recommended best practices for writing CSS code, including:
 ```
 /* Example CSS code snippet */
 .container {
+  padding: 16px 0;
+}
+
+.row {
+  margin: 0 auto;
+  padding: 0 32px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
